@@ -12,7 +12,7 @@ const { buildResponsiveSizes } = require(`./utils`)
 // 2. Find the image's size
 // 3. Filter out any responsive image sizes that are greater than the image's width
 // 4. Create the responsive images.
-// 5. Set the html w/ aspect ratio helper.
+// 5. Set the html w/ aspect ratio helper. 
 
 module.exports = async (
   {
