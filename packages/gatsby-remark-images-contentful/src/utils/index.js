@@ -59,14 +59,19 @@ const buildResponsiveSizes = async (
 
   const srcSet = filteredSizes
     .map(
-      size => `${formattedImgUrl}?w=${Math.round(size)} ${Math.round(size)}w`
+      size =>
+        `${formattedImgUrl}?fm=png&q=75&w=${Math.round(size)} ${Math.round(
+          size
+        )}w`
     )
     .join(`,\n`)
 
   const webpSrcSet = filteredSizes
     .map(
       size =>
-        `${formattedImgUrl}?fm=webp&w=${Math.round(size)} ${Math.round(size)}w`
+        `${formattedImgUrl}?fm=webp&q=75&w=${Math.round(size)} ${Math.round(
+          size
+        )}w`
     )
     .join(`,\n`)
 
